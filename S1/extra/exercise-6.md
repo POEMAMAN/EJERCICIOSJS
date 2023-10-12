@@ -1,4 +1,4 @@
-Usa un bucle para recorrer el array de peliculas (`movies`) y añade al array `goodProducts` los que tengan más de 20 ventas (`sellCount`) y al array `badProducts` los que tengan menos.
+Usa un bucle para recorrer el array de peliculas (`products`) y añade al array `goodProducts` los que tengan más de 20 ventas (`sellCount`) y al array `badProducts` los que tengan menos.
 ```js
 const goodProducts = [];
 const badProducts = [];
