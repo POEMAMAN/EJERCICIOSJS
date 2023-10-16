@@ -7,4 +7,10 @@ let sum = 0;
 for (let i = 0; i < products.length; i++) {
     sum += products[(i)].sellCount; if (sum = (products[(0)].sellCount+products[(1)].sellCount+products[(2)].sellCount+products[(3)].sellCount)) {
     console.log (sum / 4)}
+};
+/* indicado Hector */
+
+let totalSellCount = 0
+for (let product of products) {
+    totalSellCount += product.sellCount
 }

@@ -19,3 +19,20 @@ console.log(shortMovies);
 console.log(mediumMovies);
 console.log(largeMovies);
 
+/* indicado hector, mas corto y sencillo */
+let littleFilm = [];
+let mediumFilm = [];
+let longFilms = [];
+for (movie of movies) {
+     if (movie.durationInMinutes < 100) {
+          littleFilm.push(movie);
+     } else if (movie.durationInMinutes < 200) {
+          mediumFilm.push(movie);
+     } else {
+          longFilms.push(movie);
+     }
+     };
+
+console.log(littleFilm);
+console.log(mediumFilm);
+console.log(longFilms);

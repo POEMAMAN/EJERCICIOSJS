@@ -12,3 +12,18 @@ for (let i = 0; i < products.length; i++) { if (products[i].sellCount > 20)
 };
 console.log(goodProducts);
 console.log(badProducts);
+
+/* Indicado hector */
+console.log('--------------');
+const goodProductsA = [];
+const badProductsA = [];
+const MINIMUM_SELL_COUNT = 20;
+for (product of products) {
+    if (product.sellCount > MINIMUM_SELL_COUNT) {
+        goodProductsA.push(product);
+    } else {
+        badProductsA.push(product);
+    }
+};
+console.log(goodProductsA);
+console.log(badProductsA);
