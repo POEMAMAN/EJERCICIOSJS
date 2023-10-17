@@ -29,41 +29,36 @@ const users = [
     },
 ]
 
-
+let sounds = []
+let xWaves = 0;
+let xRain = 0;
+let xFirecamp = 0;
+let xShower = 0;
+let xTrain = 0;
+let xWind = 0;
+let x = 0;
 for (var nombre in users) {
-    let sounds = []
-    let xWaves = 0;
-    let xRain = 0;
-    let xFirecamp = 0;
-    let xShower = 0;
-    let xTrain = 0;
-    let xWind = 0;
-    let x = 0;
 
   let props = users[nombre].favoritesSounds;
 
     if (props.hasOwnProperty("waves")){
-        xWaves = xWaves + props.waves.volume;
-        sounds.push(xWaves);
+        xWaves = xWaves + 1;
     } if (props.hasOwnProperty("rain")){
-        xRain = xRain + props.rain.volume;
-        sounds.push(xRain);
+        xRain = xRain + 1;
     } if (props.hasOwnProperty("firecamp")){
-        xFirecamp = xFirecamp + props.firecamp.volume;
-        sounds.push(xFirecamp);
+        xFirecamp = xFirecamp + 1;
     } if (props.hasOwnProperty("shower")){
-        xShower = xShower + props.shower.volume;
-        sounds.push(xShower);
+        xShower = xShower + 1;
     } if (props.hasOwnProperty("train")){
-        xTrain = xTrain + props.train.volume;
-        sounds.push(xTrain);
+        xTrain = xTrain + 1;
     } if (props.hasOwnProperty("wind")){
-        xWind = xWind + props.wind.volume;
-        sounds.push(xWind);
-    }
+        xWind = xWind + 1;} else {}
+ }
+console.log("Waves ha sido favorito " + xWaves + " veces.");
+console.log("Rain ha sido favorito " + xRain + " veces.");
+console.log("Rain ha sido favorito " + xFirecamp + " veces.");
+console.log("Rain ha sido favorito " + xShower + " veces.");
+console.log("Rain ha sido favorito " + xTrain + " veces.");
+console.log("Rain ha sido favorito " + xWind + " veces.");
+   
 
-    for (let volume of sounds){
-    x = x + volume;
-    }
-        console.log("La media de volumen de " + users[nombre].name + " es: " + (x/3));
-    }
