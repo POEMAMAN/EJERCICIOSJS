@@ -28,41 +28,18 @@ const users = [
         }
     },
 ];
-for (var nombre in users) {
-    let sounds = []
-    let xWaves = 0;
-    let xRain = 0;
-    let xFirecamp = 0;
-    let xShower = 0;
-    let xTrain = 0;
-    let xWind = 0;
-    let x = 0;
 
-  let props = users[nombre].favoritesSounds;
 
-    if (props.hasOwnProperty("waves")){
-        xWaves = xWaves + props.waves.volume;
-        sounds.push(xWaves);
-    } if (props.hasOwnProperty("rain")){
-        xRain = xRain + props.rain.volume;
-        sounds.push(xRain);
-    } if (props.hasOwnProperty("firecamp")){
-        xFirecamp = xFirecamp + props.firecamp.volume;
-        sounds.push(xFirecamp);
-    } if (props.hasOwnProperty("shower")){
-        xShower = xShower + props.shower.volume;
-        sounds.push(xShower);
-    } if (props.hasOwnProperty("train")){
-        xTrain = xTrain + props.train.volume;
-        sounds.push(xTrain);
-    } if (props.hasOwnProperty("wind")){
-        xWind = xWind + props.wind.volume;
-        sounds.push(xWind);
+let totalVolume = 0;
+let volumeCount = 0;
+    for(let user of users) {
+        const favoritesSounds = users.favoritesSounds;
+        for (soundKey in favoritesSounds) {
+            const soundInfo = favoritesSounds[soundKey];
+            console.log(soundInfo);
+            volumeCount++;
+            totalVolume += soundInfo.volume;
+        }
     }
-
-    for (let volume of sounds){
-    x = x + volume;
-    }
-        console.log("La media de volumen de " + users[nombre].name + " es: " + (x/3));
-    }
+    console.log(totalVolume / volumeCount);
 

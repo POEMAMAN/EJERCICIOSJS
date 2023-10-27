@@ -9,3 +9,11 @@ for (let i = 0; i < placesToTravel.length; i++) { if (placesToTravel[i].id == 11
     {placesToTravel.splice(i,1)};
 };
 console.log (placesToTravel);
+
+//hector, con for..of//
+for (const place of placesToTravel) {
+    if (place.id === 11 || place.id === 40) {
+        placesToTravel.splice(indexOf(placesToTravel,1))
+    }  
+}
+console.log (placesToTravel);

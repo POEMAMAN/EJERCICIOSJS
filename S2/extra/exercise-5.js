@@ -1,8 +1,9 @@
-function rollDice(min,max) {
-    let dado = Math.floor(Math.random() * max) + min;
+function rollDice(sides) {
+    let dado = Math.floor(Math.random() * sides) + 1;
     console.log(dado);
-    parseInt
+  
 }
 
-rollDice(1, 6); //Funciona
+rollDice(6); //Funciona
 
+    

@@ -10,7 +10,7 @@ Basandote en el siguiente html y javascript,inserta p con el texto 'Voy dentro!'
 </head>
 <body>
    <div class="fn-insert-here"></div>
-   <div></div>
+   <div>1</div>
    <div class="fn-insert-here"></div>
    <div>Aqui no va un p</div>
 </body>

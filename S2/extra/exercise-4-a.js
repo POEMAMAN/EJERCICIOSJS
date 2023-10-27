@@ -9,7 +9,6 @@ const text4 = "Ajolote";
         for (var i = 0; i < array.length; i++) {
             if (array[i] == text) {
                 return i;
-                break;
             }
         }
     }
@@ -20,3 +19,11 @@ const text4 = "Ajolote";
     console.log(prueba2);
     let prueba3 = findArrayIndex(texts, text1);
     console.log(prueba3);
+
+
+    //hector//
+ //   function findArrayIndex(array, text) {
+   //     return.array.indexOf(text);
+  //  }
+
+ //   console.log(findArrayIndex(array, 'Mosquito'));

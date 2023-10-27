@@ -5,24 +5,14 @@ const movies = [
     {title: 'El gato con guantes', duration: 111, categories: ['comedia', 'aventura', 'animación']},
 ];
 
-let xAccion = [];
-let xAnimacion = [];
-let xAventura = [];
-let xComedia = [];
-let xThriller = [];
+let categories = [];
 
-for (x of movies) {
-    if (x.categories.includes("comedia")) {
-        xComedia.push(x.title);
-    } if (x.categories.includes("aventura")) {
-        xAventura.push(x.title);
-    } if (x.categories.includes("acción")) {
-        xAccion.push(x.title);
-    } if (x.categories.includes("thriller")) {
-        xThriller.push(x.title);
-    } if (x.categories.includes("animación")) {
-        xAnimacion.push(x.title);
+
+for (movie of movies) {
+    for (let categorie of movie.categories) {
+        if
     }
+
 }
 
 console.log("Títulos de género Acción: " + xAccion);

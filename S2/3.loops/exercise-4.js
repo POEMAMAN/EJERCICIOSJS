@@ -6,9 +6,10 @@ const toys = [
 {id: 40, name: 'El gato felix'}];
 
 
-for (const x of toys.reverse()) {
-  if(x.name.includes('gato')) {
-    {toys.shift(x) && toys.shift(x+1) }
+for (const toy of toys  ) {
+  if(toy.name.includes('gato')) {
+    let index = toys.indexOf(toy);
+    toys.splice(index);
   }
 }
 console.log(toys);
