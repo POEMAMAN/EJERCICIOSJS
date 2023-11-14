@@ -33,13 +33,14 @@ const users = [
 let totalVolume = 0;
 let volumeCount = 0;
     for(let user of users) {
-        const favoritesSounds = users.favoritesSounds;
+        const favoritesSounds = user.favoritesSounds;
         for (soundKey in favoritesSounds) {
             const soundInfo = favoritesSounds[soundKey];
-            console.log(soundInfo);
             volumeCount++;
             totalVolume += soundInfo.volume;
         }
     }
     console.log(totalVolume / volumeCount);
+
+    //Funciona //
 

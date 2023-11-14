@@ -16,8 +16,15 @@
 }
 
 .b-mole {
-    background-image: url('public/exercise-2/mole.png');
+    /* background-image: url(public/exercise-2/mole.png); */
     background-size: 90%;
     background-repeat: no-repeat;
     background-position: center;
 }
+.b-square .b-mole.up {
+    top: 50px;
+    background-image: url(public/exercise-2/mole.png);
+    background-size: 90%;
+    height: 250px;
+    width: 250px;
+  }

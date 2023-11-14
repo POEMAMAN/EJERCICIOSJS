@@ -10,3 +10,22 @@
     border-radius: 10px;
     background-color: aquamarine;
 }
+.hidden {
+    display: none;
+
+}
+.item {
+    background-color: lightgreen;
+    width: 100px;
+    height: 100px;
+    margin: 10px;
+
+}
+
+button {
+    background-color: blueviolet;
+    background-size: auto;
+    width: 100px;
+    height: 50px;
+    text-decoration: aliceblue;
+}

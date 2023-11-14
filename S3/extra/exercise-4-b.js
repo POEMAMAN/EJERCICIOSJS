@@ -12,9 +12,10 @@ const countries = [
       let img$$ =document.createElement('img');
       document.body.appendChild(div$$);
       div$$.appendChild(h4$$);
-       h4$$.textContent = countrie.title
-      h4$$.appendChild(img$$);
-      img$$.textContent = countrie.imgUrl
+      h4$$.textContent = countrie.title;
+      div$$.appendChild(img$$);
+      img$$.src = countrie.imgUrl;
+      img$$.alt = 'Imagen de ' + countrie.title;
   }
 
   let btnEraser$$ = document.querySelector('button');
@@ -22,6 +23,7 @@ const countries = [
 
   btnEraser$$.onclick = function () {
     let divERased$$ = document.querySelector('div');
-    this.parentElement.removeChild(divERased$$);
+    if (divERased$$ !== null) {
+    this.parentElement.removeChild(divERased$$);}
     
-  }
+  } 

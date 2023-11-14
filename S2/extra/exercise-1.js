@@ -8,15 +8,14 @@ const movies = [
 let categories = [];
 
 
-for (movie of movies) {
-    for (let categorie of movie.categories) {
-        if
+for (let movie of movies) {
+    for (let category of movie.categories) {
+        if (!categories.includes(category)) {
+            categories.push(category);
+        }
     }
-
 }
 
-console.log("Títulos de género Acción: " + xAccion);
-console.log("Títulos de género Animación: " + xAnimacion);
-console.log("Títulos de género Aventura: " + xAventura);
-console.log("Títulos de género Comedia: " + xComedia);
-console.log("Títulos de género Thriller: " + xThriller);
+console.log(categories)
+
+//Funciona//
